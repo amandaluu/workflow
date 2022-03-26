@@ -1,0 +1,12 @@
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+
+
+
+gulp.task('sass', function(){
+	return gulp.src('src/scss/app.scss')
+		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+		.pipe(gulp.dest('app/css'));
+});
+
+gulp.task('default');
