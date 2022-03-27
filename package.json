@@ -23,8 +23,12 @@
   },
   "homepage": "https://github.com/amandaluu/workflow#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "browser-sync": "^2.27.9",
+    "gulp": "^3.9.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "node": "^7.10.1"
   }
 }
