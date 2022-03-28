@@ -1,5 +1,5 @@
 function say_hello() {
-	alert = "hello";
+	alert("hello");
 }
 
 $(document).ready(function() {
