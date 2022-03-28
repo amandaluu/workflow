@@ -25,6 +25,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
   },
