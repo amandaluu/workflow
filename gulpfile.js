@@ -3,14 +3,13 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const autoprefixer = require('gulp-autoprefixer');
-const browserify = require('gulp-browserify');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 
 var SOURCEPATH = {
 	sassSource : 'src/scss/*.scss',
 	htmlSource : 'src/*.html',
-	jsSource : 'src/js/**'
+	jsSource : 'src/js/*.js'
 }
 
 var APPPATH = {
@@ -53,7 +52,7 @@ gulp.task('serve', ['sass'], function() {
 			baseDir : APPPATH.root
 		}
 	})
-});
+})
 
 gulp.task('watch', ['serve', 'sass', 'copy', 'clean-html', 'clean-scripts', 'scripts'], function() {
 	gulp.watch([SOURCEPATH.sassSource], ['sass']);
